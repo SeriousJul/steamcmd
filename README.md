@@ -7,7 +7,8 @@ Instanciate steamcmd container for each game. Simply restart the instanciated co
 This will install the game in /games/crea on the host filesystem
 ```
 docker run -it -v /games/crea:/game \
--e "app_update=414570" --security-opt seccomp=unconfined \
+-e "app_update=414570" \
+--security-opt seccomp=unconfined \
 --name install-crea seriousjul/steamcmd
 ```
 #### Update (or resume install)
@@ -20,7 +21,7 @@ docker start install-crea && docker attach install-crea
 This will install the game in /games/starbound on the host filesystem
 ```
 docker run -it -v /games/starbound:/game \
--e "app_update=211820" -e "login=login" \
+-e "login=login" -e "app_update=211820" \
 --security-opt seccomp=unconfined \
 --name install-starbound seriousjul/steamcmd
 ```
