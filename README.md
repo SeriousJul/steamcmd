@@ -10,7 +10,7 @@ docker run -it -v /games/crea:/game \
 -e "app_update=414570" --security-opt seccomp=unconfined \
 --name install-crea seriousjul/steamcmd
 ```
-#### Update
+#### Update (or resume install)
 To update your game folder, just restart the container
 ```
 docker start install-crea && docker attach install-crea
@@ -24,7 +24,7 @@ docker run -it -v /games/starbound:/game \
 --security-opt seccomp=unconfined \
 --name install-starbound seriousjul/steamcmd
 ```
-#### Update
+#### Update (or resume install)
 To update your game folder, just restart the container
 ```
 docker start install-starbound && docker attach install-starbound
