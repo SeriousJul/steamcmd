@@ -11,6 +11,7 @@ docker run -it -v /games/crea:/game \
 --name install-crea seriousjul/steamcmd
 ```
 #### Update
+To update your game folder, just restart the container
 ```
 docker start install-crea && docker attach install-crea
 ```
@@ -24,6 +25,7 @@ docker run -it -v /games/starbound:/game \
 --name install-starbound seriousjul/steamcmd
 ```
 #### Update
+To update your game folder, just restart the container
 ```
 docker start install-starbound && docker attach install-starbound
 ```
