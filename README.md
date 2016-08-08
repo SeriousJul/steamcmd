@@ -20,7 +20,7 @@ docker start install-crea && docker attach install-crea
 This will install the game in /games/starbound on the host filesystem
 ```
 docker run -it -v /games/starbound:/game \
--e "app_update=211820" -e "login=login password" \
+-e "app_update=211820" -e "login=login" \
 --security-opt seccomp=unconfined \
 --name install-starbound seriousjul/steamcmd
 ```
