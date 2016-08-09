@@ -5,11 +5,3 @@ apt-get update \
 	&& apt-get clean \
 	&& mkdir -p /root/steamcmd \
     && curl -s https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar -vxz -C /root/steamcmd \
-	
-	
-	
-	
-	
-	
-	
-	
