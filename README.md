@@ -1,4 +1,6 @@
 # Dockerized Steamcmd
+[![](https://images.microbadger.com/badges/version/seriousjul/steamcmd.svg)](http://microbadger.com/images/seriousjul/steamcmd "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/seriousjul/steamcmd.svg)](http://microbadger.com/images/seriousjul/steamcmd "Get your own image badge on microbadger.com")
 
 Instanciate steamcmd container for each game. Simply restart the instanciated container when you want to update your game
 
